@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/ScrollBarStyle"
+    android:fillViewport="true"
+    android:gravity="center"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp">
+
+        <!--<TextView
+            android:id="@+id/committee_admin"
+            style="@style/bodyStyleBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/admin" />
+
+        <TextView
+            android:id="@+id/committee_title"
+            style="@style/bodyStyleBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider_1"
+            android:text="@string/committee_title" />
+
+        <TextView
+            android:id="@+id/committee_slots"
+            style="@style/bodyStyleBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider_2"
+            android:text="@string/total_slots" />
+
+        <TextView
+            android:id="@+id/total_amount"
+            style="@style/bodyStyleBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider_3"
+            android:text="@string/total_amount" />
+
+        <TextView
+            android:id="@+id/amount_per_month"
+            style="@style/bodyStyleBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider_4"
+            android:text="@string/payment__per_month" />
+
+        <TextView
+            android:id="@+id/currency"
+            style="@style/bodyStyleBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider_5"
+            android:text="@string/currency" />
+
+        <TextView
+            android:id="@+id/start_date"
+            style="@style/bodyStyleBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider_6"
+            android:text="@string/start_date" />
+
+        <TextView
+            android:id="@+id/end_date"
+            style="@style/bodyStyleBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider_7"
+            android:text="@string/end_date" />
+
+        <TextView
+            android:id="@+id/collect_interval"
+            style="@style/bodyStyleBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider_8"
+            android:text="@string/committee_interval" />
+
+        <TextView
+            android:id="@+id/collect_date"
+            style="@style/bodyStyleBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider_9"
+            android:text="@string/collection_date" />
+
+        <TextView
+            android:id="@+id/collection_mode"
+            style="@style/bodyStyleBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider_10"
+            android:layout_toLeftOf="@+id/collection_mode_val"
+            android:text="@string/payment_collection_mode" />
+
+        <TextView
+            android:id="@+id/draw_mode"
+            style="@style/bodyStyleBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider_11"
+            android:text="@string/draw_mode" />
+
+        <TextView
+            android:id="@+id/committee_admin_val"
+            style="@style/bodyStyleNormal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/status_chart"
+            android:layout_toRightOf="@+id/committee_admin"
+            android:text="@string/admin" />
+
+        <View
+            android:id="@+id/divider_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_below="@+id/committee_admin"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@color/graph_color1" />
+
+        <View
+            android:id="@+id/divider_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_below="@+id/committee_title"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@color/graph_color1" />
+
+        <View
+            android:id="@+id/divider_3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_below="@+id/committee_slots"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@color/graph_color1" />
+
+        <View
+            android:id="@+id/divider_4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_below="@+id/total_amount"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@color/graph_color1" />
+
+        <View
+            android:id="@+id/divider_5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_below="@+id/payment_per_member"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@color/graph_color1" />
+
+        <View
+            android:id="@+id/divider_6"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_below="@+id/currency"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@color/graph_color1" />
+
+        <View
+            android:id="@+id/divider_7"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_below="@+id/start_date"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@color/graph_color1" />
+
+        <View
+            android:id="@+id/divider_8"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_below="@+id/end_date"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@color/graph_color1" />
+
+        <View
+            android:id="@+id/divider_9"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_below="@+id/collect_interval"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@color/graph_color1" />
+
+        <View
+            android:id="@+id/divider_10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_below="@+id/collect_date"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@color/graph_color1" />
+
+        <View
+            android:id="@+id/divider_11"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_below="@+id/collection_mode"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@color/graph_color1" />
+
+        <TextView
+            android:id="@+id/committee_title_val"
+            style="@style/bodyStyleNormal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/divider_1"
+            android:text="@string/admin" />
+
+        <TextView
+            android:id="@+id/committee_slots_val"
+            style="@style/bodyStyleNormal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/divider_2"
+            android:text="10" />
+
+        <TextView
+            android:id="@+id/total_amount_val"
+            style="@style/bodyStyleNormal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/divider_3"
+            android:text="7" />
+
+        <TextView
+            android:id="@+id/payment_per_member"
+            style="@style/bodyStyleNormal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/divider_4"
+            android:text="10,000" />
+
+        <TextView
+            android:id="@+id/currency_val"
+            style="@style/bodyStyleNormal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/divider_5"
+            android:text="PKR" />
+
+        <TextView
+            android:id="@+id/start_date_val"
+            style="@style/bodyStyleNormal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/divider_6"
+            android:text="Mar 14, 2018" />
+
+        <TextView
+            android:id="@+id/end_date_val"
+            style="@style/bodyStyleNormal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/divider_7"
+            android:text="Mar 14, 2018" />
+
+        <TextView
+            android:id="@+id/collect_interval_val"
+            style="@style/bodyStyleNormal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/divider_8"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:text="10" />
+
+        <TextView
+            android:id="@+id/collect_date_val"
+            style="@style/bodyStyleNormal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/divider_9"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:text="10" />
+
+        <TextView
+            android:id="@+id/collection_mode_val"
+            style="@style/bodyStyleNormal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/divider_10"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:text="@string/collection_admin" />
+
+        <TextView
+            android:id="@+id/draw_mode_val"
+            style="@style/bodyStyleNormal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/divider_11"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:text="@string/random_draw" />
+
+        <View
+            android:id="@+id/divider"
+            style="@style/homeItemStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_5sdp"
+            android:layout_below="@+id/draw_mode_val"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@color/graph_color1" />-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/container_summary"></FrameLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/particpant_list"
+            style="@style/ScrollBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/container_summary"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/white"></android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/btn_complete"
+            style="@style/generalButtonStyle"
+            android:layout_below="@+id/particpant_list"
+            android:layout_centerHorizontal="true"
+            android:text="@string/completed"
+            android:visibility="gone"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_below="@+id/btn_complete"/>
+    </RelativeLayout>
+</ScrollView>

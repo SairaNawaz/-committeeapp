@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ScrollBarStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/username"
+            style="@style/menuItemStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profileimage"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center|left|bottom"
+            android:text="ABC\n8475896576756" />
+
+        <ImageView
+            android:id="@+id/profileimage"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_toLeftOf="@+id/edit_profile"
+            android:adjustViewBounds="true"
+            android:src="@drawable/placeholder" />
+
+        <ImageView
+            android:id="@+id/edit_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/profileimage"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_edit" />
+
+        <TextView
+            android:id="@+id/title_lang"
+            style="@style/bodyStyleBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:text="@string/language_preferences" />
+
+        <RadioGroup
+            android:id="@+id/selector_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_lang"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/lang_en"
+                style="@style/radioItemStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/english" />
+
+            <RadioButton
+                android:id="@+id/lang_ur"
+                style="@style/radioItemStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/urdu"
+                android:clickable="false"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/title_password"
+            style="@style/bodyStyleBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/selector_language"
+            android:text="@string/password_preferences" />
+
+        <RadioGroup
+            android:id="@+id/selector_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_password"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/pass_on"
+                style="@style/radioItemStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/on" />
+
+            <RadioButton
+                android:id="@+id/pass_off"
+                style="@style/radioItemStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/off"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/title_reminder"
+            style="@style/bodyStyleBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/selector_password"
+            android:text="@string/payment_reminder_preferences"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/selector_reminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_reminder"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RadioButton
+                android:id="@+id/reminder_on"
+                style="@style/radioItemStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/automatic" />
+
+            <RadioButton
+                android:id="@+id/reminder_off"
+                style="@style/radioItemStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/manual" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/btn_save"
+            style="@style/generalButtonStyle"
+            android:layout_below="@id/selector_reminder"
+            android:layout_centerHorizontal="true"
+            android:text="@string/save" />
+    </RelativeLayout>
+</ScrollView>

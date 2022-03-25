@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/pending_committees"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/bodyStyleBold1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No Committees..." />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/committee_list"
+                style="@style/ScrollBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"></android.support.v7.widget.RecyclerView>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/completedarea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pending_committees">
+
+            <TextView
+                android:id="@+id/cdivider"
+                style="@style/appBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@color/colorAccent"
+                android:padding="@dimen/_7sdp"
+                android:text="@string/completed"
+                android:textColor="@color/white" />
+
+            <TextView
+                style="@style/bodyStyleBold1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cdivider"
+                android:text="No Completed Committees..." />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/committee_list_completed"
+                style="@style/ScrollBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cdivider"
+                android:background="@color/white"></android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

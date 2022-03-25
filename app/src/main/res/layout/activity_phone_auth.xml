@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/progressbar"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:id="@+id/app_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16sdp"
+        android:background="@color/white"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/app_icon"
+        android:layout_alignTop="@+id/app_icon"
+        android:layout_toRightOf="@+id/app_icon"
+        android:gravity="center"
+        android:text="Please Verify your phone Number" />
+
+    <Spinner
+        android:id="@+id/country_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/phoneNumber"
+        android:layout_alignTop="@+id/phoneNumber"
+        android:layout_below="@+id/app_icon"
+        android:entries="@array/country"></Spinner>
+
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_icon"
+        android:layout_toLeftOf="@+id/send_button"
+        android:layout_toRightOf="@+id/country_code"
+        android:hint="@string/hint_phone_number"
+        style="@style/inputItemStyle" />
+
+    <TextView
+        android:id="@+id/send_button"
+        style="@style/generalButtonStyle"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/app_icon"
+        android:text="Send" />
+
+    <EditText
+        android:id="@+id/verificationCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneNumber"
+        android:layout_toLeftOf="@+id/verify_button"
+        android:hint="@string/hint_verification_code"
+        style="@style/inputItemStyle" />
+
+    <TextView
+        android:id="@+id/verify_button"
+        style="@style/generalButtonStyle"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/phoneNumber"
+        android:text="Verify" />
+</RelativeLayout>

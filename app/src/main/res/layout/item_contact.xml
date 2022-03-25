@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/frame"
+    android:gravity="center"
+    android:padding="@dimen/_5sdp">
+
+
+    <ImageView
+        android:id="@+id/ivContactImage"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/_5sdp"
+        android:src="@drawable/placeholder" />
+
+
+    <TextView
+        android:id="@+id/tvContactName"
+        style="@style/bodyStyleBold1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvPhoneNumber"
+        android:layout_toLeftOf="@+id/invitearea"
+        android:layout_toRightOf="@+id/ivContactImage"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/tvPhoneNumber"
+        style="@style/bodyStyleGray3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ivContactImage"
+        android:layout_toLeftOf="@+id/invitearea"
+        android:layout_toRightOf="@+id/ivContactImage"
+        android:text="Phone" />
+
+    <FrameLayout
+        android:id="@+id/invitearea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+
+        <CheckBox
+            android:id="@+id/contact_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp" />
+
+        <TextView
+            android:id="@+id/btn_invite"
+            style="@style/generalButtonStyle"
+            android:text="Invite"
+            android:visibility="gone" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/progressbar"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_centerInParent="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/splashAnim"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/splash_hand1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/splash_h1"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/splash_hand2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/splash_hand1"
+            android:src="@drawable/splash_h3"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/splash_hand3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/splash_hand1"
+            android:layout_toRightOf="@+id/splash_hand2"
+            android:src="@drawable/splash_h2"
+            android:visibility="invisible" />
+
+
+        <ImageView
+            android:id="@+id/splash_plant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/splash_hand2"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/splash_tree"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/phoneAuthView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@color/white"
+        android:visibility="visible">
+
+
+        <ImageView
+            android:id="@+id/app_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_16sdp"
+            android:background="@color/white"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            style="@style/membersHeaderStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/app_icon"
+            android:layout_toRightOf="@+id/app_icon"
+            android:gravity="center"
+            android:text="Please Verify your phone Number" />
+
+        <Spinner
+            android:id="@+id/country_code"
+            style="@style/bodyStyleGray3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/phoneNumber"
+            android:layout_alignTop="@+id/phoneNumber"
+            android:layout_below="@+id/app_icon"
+            android:entries="@array/country"></Spinner>
+
+        <EditText
+            android:id="@+id/phoneNumber"
+            style="@style/inputItemStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/app_icon"
+            android:layout_toRightOf="@+id/country_code"
+            android:hint="@string/hint_phone_number"
+            android:inputType="number"
+            android:maxLength="10"/>
+
+        <TextView
+            android:id="@+id/send_button"
+            style="@style/generalButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/phoneNumber"
+            android:text="Send" />
+
+        <EditText
+            android:id="@+id/verificationCode"
+            style="@style/inputItemStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/send_button"
+            android:layout_toLeftOf="@+id/verify_button"
+            android:hint="@string/hint_verification_code"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/verify_button"
+            style="@style/generalButtonStyle"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/send_button"
+            android:text="Verify" />
+    </RelativeLayout>
+</RelativeLayout>

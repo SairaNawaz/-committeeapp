@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_120sdp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:background="@drawable/frame">
+
+    <TextView
+        android:id="@+id/clearbtn"
+        style="@style/bodyStyleBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:gravity="right|center"
+        android:text="@string/clearall"
+        android:textSize="@dimen/_10sdp" />
+
+    <TextView
+        android:id="@+id/notification_empty"
+        style="@style/bodyStyleNormal3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clearbtn"
+        android:gravity="center"
+        android:text="No Notification yet." />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/dialog_daychooser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/clearbtn"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@color/white"
+        style="@style/ScrollBarStyle"></android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

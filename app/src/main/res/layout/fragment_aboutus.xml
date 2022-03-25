@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    style="@style/ScrollBarStyle">
+
+    <com.apponative.committee_app.ui.custom.JustifyTextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_10sdp"
+        android:text="Aenean orci elit, pulvinar nec luctus quis, aliquet nec lectus. Pellentesque et pellentesque augue. Fusce ut ipsum at sapien dignissim volutpat et ut ex. Phasellus porta, erat ut dapibus fringilla, est diam accumsan sapien, quis facilisis nisl mauris sit amet leo. Sed porta et tortor vitae dignissim. Aliquam pretium, tellus eget varius lobortis, quam diam dictum odio, eu gravida ipsum dui nec orci. Mauris auctor at velit id ornare. Etiam vitae viverra odio, eu laoreet ex. Proin aliquet ac eros at porttitor. Pellentesque sit amet cursus metus, sit amet gravida velit. Quisque sit amet sem libero. Morbi ultrices massa eu urna consequat, eu mattis odio placerat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempor dictum nisi, vel pharetra leo convallis et. Nam ornare est quam, sit amet hendrerit tortor luctus in. Donec viverra sodales maximus. Sed pretium risus ut elementum placerat. Praesent mollis ipsum a tortor tincidunt molestie. Maecenas nibh felis, ultricies ac pulvinar eu, vestibulum vitae diam. Maecenas pulvinar lacus quis magna lacinia eleifend a et erat. Vestibulum lacinia ornare viverra."
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+</ScrollView>
+

@@ -1,0 +1,271 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CustomDigitsTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorSecondary">@android:color/darker_gray</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:textColorLink">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="dgts__accentColor">@color/yellow</item>
+    </style>
+
+    <style name="noAnimTheme" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="appBarStyle">
+        <item name="android:layout_marginBottom">@dimen/_12sdp</item>
+        <item name="android:layout_marginTop">@dimen/_12sdp</item>
+        <item name="android:layout_marginLeft">@dimen/_7sdp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_20sdp</item>
+    </style>
+
+    <style name="menuItemStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_18sdp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="footerItemStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="bodyStyleBlue">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:layout_margin">@dimen/_5sdp</item>
+    </style>
+
+    <style name="bodyStyleBold1">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">@dimen/_5sdp</item>
+        <item name="android:layout_marginLeft">@dimen/_5sdp</item>
+        <item name="android:layout_marginRight">@dimen/_5sdp</item>
+        <item name="android:layout_marginBottom">@dimen/_2sdp</item>
+    </style>
+
+    <style name="bodyStyleNormal1">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:layout_margin">@dimen/_5sdp</item>
+    </style>
+
+    <style name="bodyStyleGray1">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:layout_margin">@dimen/_5sdp</item>
+    </style>
+
+    <style name="bodyStyleGray3">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:layout_marginLeft">@dimen/_5sdp</item>
+        <item name="android:layout_marginRight">@dimen/_5sdp</item>
+    </style>
+
+    <style name="membersHeaderStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_15sdp</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:layout_margin">@dimen/_5sdp</item>
+    </style>
+
+    <style name="bodyStyleNormal3">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">@dimen/_5sdp</item>
+    </style>
+
+    <style name="bodyStyleNormal2">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:gravity">center|right</item>
+        <item name="android:layout_margin">@dimen/_5sdp</item>
+    </style>
+
+    <style name="bodyStyleGray2">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:gravity">center|right</item>
+        <item name="android:layout_margin">@dimen/_5sdp</item>
+    </style>
+
+    <style name="radioItemStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:paddingLeft">@dimen/_7sdp</item>
+    </style>
+
+    <style name="inputItemStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:padding">@dimen/_5sdp</item>
+        <item name="android:background">@drawable/frame</item>
+        <item name="android:layout_margin">@dimen/_5sdp</item>
+        <item name="android:gravity">center|left</item>
+    </style>
+
+    <style name="spinnertemStyle" parent="Widget.AppCompat.Spinner.Underlined">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:gravity">center|left</item>
+        <item name="colorAccent">@color/yellow</item>
+        <item name="colorControlNormal">@color/yellow</item>
+        <!-- <item name="android:background">@drawable/spinner_bg</item>-->
+        <item name="android:paddingTop">@dimen/_7sdp</item>
+        <item name="android:paddingBottom">@dimen/_7sdp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:spinnerMode">dropdown</item>
+        <item name="android:popupBackground">@drawable/frame</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="searchITemStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:padding">@dimen/_7sdp</item>
+        <item name="android:gravity">center|left</item>
+    </style>
+
+    <style name="generalButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/btn_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/_5sdp</item>
+        <item name="android:paddingBottom">@dimen/_5sdp</item>
+        <item name="android:paddingLeft">@dimen/_10sdp</item>
+        <item name="android:paddingRight">@dimen/_10sdp</item>
+        <item name="android:layout_margin">@dimen/_10sdp</item>
+        <item name="android:textSize">@dimen/_15sdp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="homeItemStyle">
+        <!--   <item name="android:background">@drawable/home_frame</item>-->
+        <item name="android:layout_margin">@dimen/_10sdp</item>
+        <!-- <item name="android:padding">@dimen/_25sdp</item>-->
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up_dialog</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_down</item>
+    </style>
+
+    <style name="DialogSlideAnim" parent="Base.Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowSoftInputMode">stateVisible|adjustPan</item>
+    </style>
+
+    <style name="TabStyle" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">?attr/colorAccent</item>
+        <item name="tabBackground">@drawable/tab_selector</item>
+        <item name="tabGravity">fill</item>
+    </style>
+
+    <style name="NotificationWindow" parent="Base.Widget.AppCompat.PopupWindow">
+        <item name="android:windowAnimationStyle">@style/MyAnimation.Window</item>
+    </style>
+
+    <style name="MyAnimation.Window" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/notification_in</item>
+        <item name="android:windowExitAnimation">@anim/notification_out</item>
+    </style>
+
+    <style name="ScrollBarStyle">
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:scrollbarStyle">insideOverlay</item>
+        <item name="android:fadeScrollbars">false</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar</item>
+        <item name="android:scrollbarSize">@dimen/_5sdp</item>
+        <item name="android:scrollbarThumbHorizontal">@drawable/scrollbar</item>
+    </style>
+
+    <style name="ScrollBarStyleHorizontal">
+        <item name="android:scrollbars">horizontal</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:fadeScrollbars">false</item>
+        <item name="android:scrollbarSize">@dimen/_3sdp</item>
+        <item name="android:scrollbarThumbHorizontal">@drawable/horizontalscrollbar</item>
+    </style>
+
+    <style name="dividerStyle">
+       <!-- <item name="android:layout_margin">@dimen/_3sdp</item>-->
+        <item name="android:layout_height">@dimen/_2sdp</item>
+        <item name="android:background">@color/graph_color1</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+
+    <!-- Activity with no Title -->
+    <style name="ThemeOverlay.MyNoTitleActivity" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Dark Buttons -->
+    <style name="ThemeOverlay.MyDarkButton" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="colorButtonNormal">@color/grey_500</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!-- Light EditTexts -->
+    <style name="ThemeOverlay.MyLightEditText" parent="ThemeOverlay.AppCompat.Dark"/>
+
+    <style name="ThemeOverlay.MyTextDetail" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fadeScrollbars">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">5</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ThemeOverlay.FirebaseIcon" parent="AppTheme">
+        <item name="android:layout_marginTop">@dimen/_16sdp</item>
+        <item name="android:layout_marginBottom">@dimen/_16sdp</item>
+    </style>
+
+    <style name="ThemeOverlay.MyTitleText" parent="AppTheme">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+</resources>

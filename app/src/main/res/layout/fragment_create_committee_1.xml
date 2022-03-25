@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ScrollBarStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:padding="@dimen/_10sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/input_title"
+            style="@style/inputItemStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/committee_title"
+            android:inputType="textCapWords" />
+
+        <EditText
+            android:id="@+id/input_membercount"
+            style="@style/inputItemStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_title"
+            android:hint="@string/members"
+            android:inputType="number" />
+
+        <RelativeLayout
+            android:id="@+id/intervalspinnercontainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_membercount"
+            android:layout_margin="@dimen/_5sdp">
+
+            <Spinner
+                android:id="@+id/ineterval_spinner"
+                style="@style/spinnertemStyle"
+                android:background="@drawable/frame"
+                android:entries="@array/interval_list"
+                android:prompt="@string/set_intervals" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:src="@drawable/spinner_arrow" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/collection_dateof"
+            style="@style/inputItemStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/intervalspinnercontainer"
+            android:background="@drawable/frame"
+            android:drawableRight="@drawable/spinner_arrow"
+            android:focusable="false"
+            android:hint="@string/collection_day"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/input_totalamount"
+            style="@style/inputItemStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/collection_dateof"
+            android:hint="@string/total_amount"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/input_memberpayment"
+            style="@style/inputItemStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_totalamount"
+            android:focusable="false"
+            android:hint="@string/payment__per_month"
+            android:inputType="number" />
+
+        <RelativeLayout
+            android:id="@+id/currency_spinnercontainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_memberpayment"
+            android:layout_margin="@dimen/_5sdp">
+
+            <Spinner
+                android:id="@+id/currency_spinner"
+                style="@style/spinnertemStyle"
+                android:background="@drawable/frame"
+                android:entries="@array/currency_list"
+                android:prompt="@string/set_intervals" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:src="@drawable/spinner_arrow" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/input_startdate"
+            style="@style/inputItemStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/currency_spinnercontainer"
+            android:focusable="false"
+            android:hint="@string/start_date"
+            android:inputType="number" />
+
+
+        <TextView
+            android:id="@+id/payment_collectionmode"
+            style="@style/bodyStyleBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_startdate"
+            android:text="@string/payment_collection_mode" />
+
+        <RadioGroup
+            android:id="@+id/selector_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/payment_collectionmode"
+            android:checkedButton="@+id/byadmin"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/byadmin"
+                style="@style/radioItemStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/collection_admin" />
+
+            <RadioButton
+                android:id="@+id/bymembers"
+                style="@style/radioItemStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/collection_members" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/admin_first_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/selector_mode"
+            android:text="@string/admin_first" />
+
+        <TextView
+            android:id="@+id/c1_clear"
+            style="@style/generalButtonStyle"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/admin_first_check"
+            android:text="@string/clearall" />
+
+        <TextView
+            android:id="@+id/c1_next"
+            style="@style/generalButtonStyle"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/admin_first_check"
+            android:text="@string/next" />
+
+    </RelativeLayout>
+
+</ScrollView>

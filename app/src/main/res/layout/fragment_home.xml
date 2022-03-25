@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center">
+
+
+    <ImageView
+        android:id="@+id/icon_menu1"
+        style="@style/homeItemStyle"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/home_newcommittee"
+        app:layout_heightPercent="30%"
+        app:layout_widthPercent="45%" />
+
+    <TextView
+        android:id="@+id/title_menu1"
+        style="@style/menuItemStyle"
+        android:layout_alignLeft="@+id/icon_menu1"
+        android:layout_alignRight="@+id/icon_menu1"
+        android:layout_below="@+id/icon_menu1"
+        android:gravity="center"
+        android:text="@string/create_committee" />
+
+    <ImageView
+        android:id="@+id/icon_menu2"
+        style="@style/homeItemStyle"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/home_committee"
+        app:layout_heightPercent="30%"
+        app:layout_widthPercent="45%" />
+
+    <TextView
+        android:id="@+id/title_menu2"
+        style="@style/menuItemStyle"
+        android:layout_alignLeft="@+id/icon_menu2"
+        android:layout_alignRight="@+id/icon_menu2"
+        android:layout_below="@+id/icon_menu2"
+        android:gravity="center"
+        android:text="@string/my_committee" />
+
+    <ImageView
+        android:id="@+id/icon_menu3"
+        style="@style/homeItemStyle"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title_menu2"
+        android:src="@drawable/home_contacts"
+        app:layout_heightPercent="30%"
+        app:layout_widthPercent="45%" />
+
+    <TextView
+        style="@style/menuItemStyle"
+        android:layout_alignLeft="@+id/icon_menu3"
+        android:layout_alignRight="@+id/icon_menu3"
+        android:layout_below="@+id/icon_menu3"
+        android:gravity="center"
+        android:text="@string/my_contacts" />
+
+    <ImageView
+        android:id="@+id/icon_menu4"
+        style="@style/homeItemStyle"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/title_menu2"
+        android:layout_toRightOf="@+id/icon_menu3"
+        android:src="@drawable/home_calculator"
+        app:layout_heightPercent="30%"
+        app:layout_widthPercent="45%" />
+
+    <TextView
+        style="@style/menuItemStyle"
+        android:layout_alignLeft="@+id/icon_menu4"
+        android:layout_alignRight="@+id/icon_menu4"
+        android:layout_below="@+id/icon_menu4"
+        android:gravity="center"
+        android:text="@string/calculator" />
+</android.support.percent.PercentRelativeLayout>

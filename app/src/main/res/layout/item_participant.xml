@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/members_viewholder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/circlearea"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_60sdp">
+
+        <View
+            android:id="@+id/bar_top"
+            android:layout_width="@dimen/_5sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="top|center"
+            android:background="@color/yellow" />
+
+        <View
+            android:id="@+id/bar_bottom"
+            android:layout_width="@dimen/_5sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="bottom|center"
+            android:background="@color/graph_color1" />
+
+        <View
+            android:id="@+id/bar_left"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_5sdp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|right"
+            android:layout_toLeftOf="@+id/member_area"
+            android:background="@color/yellow" />
+
+        <TextView
+            android:id="@+id/member_count"
+            style="@style/homeItemStyle"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center"
+            android:background="@drawable/member_circle_selector"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="1"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/member_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/circlearea"
+        android:layout_alignTop="@+id/circlearea"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_toRightOf="@+id/circlearea"
+        android:background="@drawable/frame">
+
+        <TextView
+            android:id="@+id/member_name"
+            style="@style/bodyStyleNormal1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/member_turn"
+            android:gravity="center|left"
+            android:text="Member 1" />
+
+        <TextView
+            android:id="@+id/member_turn"
+            style="@style/bodyStyleNormal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="4/10/17" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

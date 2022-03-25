@@ -1,0 +1,139 @@
+<resources>
+    <string name="app_name">My Committee</string>
+
+    <!-- Digits Keys -->
+    <string name="twitter_key">LymYpGEK9fZcupUjlfYuMA4jv</string>
+    <string name="twitter_secret_key">cExfPz97sxTWxf6Il16Ixu8WPxTottEAJ6t5F8OAuwfEAYBy5Y</string>
+
+    <!--FireBase-->
+    <string name="firebase_domain">\@committeeapp.com</string>
+    <string name="title_activity_set_profile">SetProfile</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <!-- Header Tags and indexes -->
+    <string name="tag_home">tag_home</string>
+    <string name="tag_committee">tag_committee</string>
+    <string name="tag_create">tag_create</string>
+    <string name="tag_contact">tag_contact</string>
+    <string name="tag_calculator">tag_calculator</string>
+    <string name="tag_aboutus">tag_aboutus</string>
+    <string name="tag_settings">tag_settings</string>
+    <string name="tag_setprofile">tag_setprofile</string>
+    <string name="tag_pending_committee">tag_pending_committee</string>
+    <string name="tag_new_committee">tag_new_committee</string>
+    <string name="tag_committee_detail">tag_committee_detail</string>
+    <string name="tag_ongoing_detail">tag_ongoing_detail</string>
+    <string name="tag_members">tag_members</string>
+    <string name="tag_randomdraw">tag_randomdraw</string>
+    <string name="tag_sendmoreinvites">tag_sendmoreinvites</string>
+
+    <string name="tag_summary">summaryfragment</string>
+
+
+    <!-- Action Bar titles -->
+    <string name="tag_home_title">Committee App</string>
+    <string name="tag_committee_title">My Committee</string>
+    <string name="tag_create_title">Create Committee</string>
+    <string name="tag_contact_title">My Contacts</string>
+    <string name="tag_calculator_title">Calculator</string>
+    <string name="tag_aboutus_title">About Us</string>
+    <string name="tag_settings_title">Settings</string>
+    <string name="tag_setprofile_title">My Profile</string>
+    <string name="tag_pending_committee_title">Pending Committee</string>
+    <string name="tag_new_committee_title">Pending Committee</string>
+    <string name="tag_committee_detail_title">Committee Details</string>
+    <string name="tag_ongoing_detail_title">Committee Details</string>
+    <string name="tag_members_title">Committee Members</string>
+    <string name="tag_randomdraw_title">Random Draw</string>
+    <string name="tag_sendmoreinvites_title">Send Invites</string>
+
+
+    <!-- Menu Items -->
+    <string-array name="menu_list">
+        <item>Home</item>
+        <item>My Committee</item>
+        <item>Create Committee</item>
+        <item>My Contacts</item>
+        <item>Calculator</item>
+        <item>About Us</item>
+        <item>Settings</item>
+    </string-array>
+
+    <array name="currency_list">
+        <item>PKR</item>
+        <item>USD</item>
+        <item>EUR</item>
+        <item>AED</item>
+    </array>
+
+    <array name="interval_list">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+    </array>
+
+    <string-array name="daylist_weekly">
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thur</item>
+        <item>Fri</item>
+        <item>Sat</item>
+        <item>Sun</item>
+    </string-array>
+
+    <string-array name="daylist_monthly">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+    </string-array>
+
+    <string name="desc_firebase_lockup">Firebase logo and name</string>
+    <string name="phone_title_text">Phone Number</string>
+    <string name="signed_out">Signed Out</string>
+    <string name="hint_phone_number">3xxxxxxxxx</string>
+    <string name="hint_verification_code">Verification Code</string>
+    <string name="start_phone_auth">Start</string>
+    <string name="verify_phone_auth">Verify</string>
+    <string name="resend_phone_auth">Resend</string>
+    <string name="sign_out">Sign Out</string>
+
+    <string-array name="country"><item>+92</item></string-array>
+
+    <string name="shareTurnUrl">https://us-central1-committee-app.cloudfunctions.net/shareTurnWithMembers</string>
+    <string name="completeCommitteeUrl">https://us-central1-committee-app.cloudfunctions.net/completeCommittee</string>
+    <string name="filterContactsUrl">https://us-central1-committee-app.cloudfunctions.net/filterUserContacts</string>
+</resources>

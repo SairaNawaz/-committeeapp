@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/share_committee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/_5sdp"
+        android:src="@android:drawable/ic_menu_share" />
+
+    <RelativeLayout
+        android:id="@+id/search_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_toLeftOf="@+id/share_committee"
+        android:background="@drawable/searchfield"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/search_contact"
+            style="@style/searchITemStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/search_imag_icon"
+            android:background="@null"
+            android:hint="Select Contact" />
+
+        <ImageView
+            android:id="@+id/search_imag_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/_3sdp"
+            android:src="@android:drawable/ic_menu_search" />
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/contact_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/moreinvite_send"
+        android:layout_below="@+id/search_area"
+        style="@style/ScrollBarStyle">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/moreinvite_send"
+        style="@style/generalButtonStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/send_invites" />
+
+
+</RelativeLayout>

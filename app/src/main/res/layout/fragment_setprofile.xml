@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp"
+    tools:context="com.apponative.committee_app.ui.fragments.Fragment_SetProfile">
+
+    <TextView
+        android:id="@+id/save_button"
+        style="@style/generalButtonStyle"
+        android:layout_below="@+id/user_Name"
+        android:layout_centerHorizontal="true"
+        android:text="Save" />
+
+    <ImageView
+        android:id="@+id/profileimage"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_above="@+id/user_Name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:src="@drawable/placeholder" />
+
+
+    <ImageView
+        android:id="@+id/btn_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/profileimage"
+        android:layout_toEndOf="@+id/profileimage"
+        android:layout_toRightOf="@+id/profileimage"
+        android:src="@drawable/icon_edit" />
+
+    <EditText
+        android:id="@+id/user_Name"
+        style="@style/inputItemStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User Name"
+        android:inputType="textCapWords"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
